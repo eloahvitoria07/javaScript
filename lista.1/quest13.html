@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let pessoa ={
+        nome : String(window.prompt('Qual é o seu nome?')),
+        contas : {
+            conta1 : {
+                banco1 : String(window.prompt('Qual o nome do 1° banco?')),
+                saldo1 : Number(window.prompt('Qual é o 1° saldo?'))
+            },
+            conta2 : {
+                banco2 : String(window.prompt('Qual o nome do 2° banco?')),
+                saldo2 : Number(window.prompt('Qual é o 2° saldo?'))
+            },
+             conta3 : {
+                banco3 : String(window.prompt('Qual o nome do 3° banco?')),
+                saldo3 : Number(window.prompt('Qual é o 3° saldo?'))
+            }
+        }
+    }
+    function saldoTotal(pessoa){
+        let soma = pessoa.contas.conta1.saldo1 + pessoa.contas.conta2.saldo2 + pessoa.contas.conta3.saldo3;
+        return soma;
+    }
+    console.log(`A pessoa ${pessoa.nome} tem R$ ${saldoTotal(pessoa)} de saldo total.`)
+   </script> 
+</body>
+</html>

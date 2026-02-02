@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function converterIdadeEmDias(anos){
+            let conv;
+            conv = anos*365;
+            return conv;
+        }
+        anos = Number(window.prompt('Quantos anos você tem?'));
+        window.alert(`A sua idade em dias é ${converterIdadeEmDias(anos)}.`);
+    </script>
+</body>
+</html>

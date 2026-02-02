@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let catalogo = {
+
+                livro1 : {
+                    titulo1: prompt('Qual o título do livro?'),
+                    autor1 : prompt('Qual o autor?'),
+                    ano1 : Number(window.prompt("Qual o ano da publicação?")),
+                    editora1 : {
+                       nome1 : String(window.prompt('Qual o nome da editora?')),
+                       cidade1 : String(window.prompt('Qual o cidade?')),
+                    }
+                }, 
+
+                livro2 : {
+                    titulo2: prompt('Qual o título do segundo livro?'),
+                    autor2 : prompt('Qual o autor?'),
+                    ano2 : Number(window.prompt("Qual o ano da publicação?")),
+                    editora2 : {
+                       nome2 : String(window.prompt('Qual o nome da editora?')),
+                       cidade2 : String(window.prompt('Qual o cidade ?')),
+                    }
+                }  
+        } 
+        console.log(`O nome da editora do ${catalogo.livro1.titulo1} é ${catalogo.livro1.editora1.nome1}.`);
+        console.log(`O ano do ${catalogo.livro2.titulo2} é ${catalogo.livro2.ano2}.`)
+
+    </script>
+</body>
+</html>

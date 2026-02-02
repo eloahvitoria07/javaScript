@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcularDesconto(pOriginal, desconto){
+            let pFinal;
+            pFinal = pOriginal - (pOriginal * desconto/ 100);
+            return pFinal;
+        }
+        pOriginal = Number(window.prompt('Qual o preço original do produto?'));
+        desconto = Number(window.prompt('Quanto é a porcentagem de desconto?'));
+        alert(`O preço final do produto é ${calcularDesconto(pOriginal, desconto)}.`);
+    </script>
+</body>
+</html>

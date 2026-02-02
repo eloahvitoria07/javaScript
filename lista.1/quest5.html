@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function convTemperatura(celsius){
+            let fahrenheit;
+            fahrenheit = (celsius *1.8) + 32;
+            return fahrenheit;
+        }
+        celsius =Number(window.prompt('Qual a temperatura em celsius?'));
+        alert(`Sua temperatura em Fahrenheit é ${convTemperatura(celsius)}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+        let aluno={
+            nome : String(prompt('Qual é o seu nome?')),
+            notas : [
+                Number(prompt('Qual é a primeira nota?')),
+                Number(prompt('Qual é a segunda nota?')),
+                Number(prompt('Qual é a terceira nota?'))
+            ]
+        }
+        function Media(){
+            let media
+            media = (aluno.notas[0] + aluno.notas[1] + aluno.notas[2])/3
+            return media
+        }
+        alert('nome do aluno é '+ aluno.nome)
+        console.log('O nome do aluno é '+ aluno.nome + ' e sua média é ' + Media() +'.')
+    </script>
+</body>
+</html>

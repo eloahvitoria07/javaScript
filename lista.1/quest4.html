@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function converterTempo(tempo){
+            let horas, minutos;
+            horas = parseInt(tempo/60);
+            minutos = tempo%60;
+            return (`${horas} horas e ${minutos} minutos`);
+        }
+        tempo = Number(window.prompt('Digite a quantidade de minutos desejada:'));
+        alert( converterTempo(tempo));
+
+    </script>
+</body>
+</html>
